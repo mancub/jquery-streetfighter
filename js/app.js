@@ -29,6 +29,7 @@ $(document).ready(function() {
     $(document).keydown(function(event) {
     /*console.log(event.which)*/
       if (event.which == 88) {
+        playDynomite();
         $('.ryu-still').hide();
         $('.ryu-ready').hide();
         $('.ryu-cool').show();
@@ -40,6 +41,7 @@ $(document).ready(function() {
         $('.ryu-cool').hide();
         $('.ryu-still').hide();
         $('.ryu-ready').show();
+        pauseDynomite();
       }
   });
 });
@@ -48,5 +50,10 @@ function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
-}
+} 
 
+function playDynomite () {
+  $('#dynomite-sound')[0].volume = 0.5;
+  $('#dynomite-sound')[0].load();
+  $('#dynomite-sound')[0].play();
+}
