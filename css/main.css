@@ -8,6 +8,19 @@ body {
 	min-width: 1200px;
 	height: 500px;
 }
+.container {
+  position: absolute;
+  margin-left: 800px;
+  margin-top: 240px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.content p {
+  font-size: 1em;
+}
 
 .ryu {
 	float: left;
